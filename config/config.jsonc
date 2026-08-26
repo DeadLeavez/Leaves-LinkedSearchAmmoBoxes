@@ -1,0 +1,27 @@
+{
+    /*
+    Adds ammo BOXES (bullet packs) to the flea market's item searches.
+
+    Two independent augmentations, each toggleable below. Both read the cartridge -> box mapping from
+    the live item database, so boxes added by other mods are picked up automatically.
+    */
+
+    // Master switch. When false, neither augmentation runs and the flea is left exactly as SPT builds it.
+    "enabled": true,
+
+    /*
+    LINKED SEARCH (the chain icon).
+    Vanilla linked search shows the loose rounds compatible with whatever you searched (a magazine,
+    a weapon, or a round itself), but not the factory ammo boxes that contain those rounds. With this
+    on, wherever a compatible cartridge would appear, its ammo box(es) appear alongside it.
+    */
+    "augmentLinkedSearch": true,
+
+    /*
+    ITEM SEARCH (click an item -> "search for this item" on the flea).
+    Normally that shows offers for exactly that one item. With this on, if the item you searched is a
+    loose round, its ammo box(es) are added to the results too - so searching a cartridge also finds
+    the factory packs of it. Only fires on a direct single-item search, not on category browsing.
+    */
+    "augmentItemSearch": true
+}
